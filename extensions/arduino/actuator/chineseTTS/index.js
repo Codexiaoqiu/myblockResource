@@ -6,8 +6,9 @@ const chineseTTS = formatMessage => ({
     extensionId: 'chineseTTS',
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
-    author: 'ArthurZheng',
+        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'
+    ],
+    author: 'maxblock',
     iconURL: `asset/chineseTTS.png`,
     description: formatMessage({
         id: 'chineseTTS.description',
@@ -21,7 +22,7 @@ const chineseTTS = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['actuator'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: '*'
 });
 
 module.exports = chineseTTS;

@@ -6,8 +6,9 @@ const mpu6050 = formatMessage => ({
     extensionId: 'mpu6050',
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
-    author: 'ArthurZheng',
+        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'
+    ],
+    author: 'maxblock',
     iconURL: `asset/mpu6050.png`,
     description: formatMessage({
         id: 'mpu6050.description',
@@ -21,7 +22,7 @@ const mpu6050 = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['sensor'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: '*'
 });
 
 module.exports = mpu6050;

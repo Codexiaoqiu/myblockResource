@@ -6,8 +6,9 @@ const insertSourceCode = formatMessage => ({
     extensionId: 'insertSourceCode',
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
-    author: 'ArthurZheng',
+        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'
+    ],
+    author: 'maxblock',
     iconURL: `asset/insertSourceCode.png`,
     description: formatMessage({
         id: 'insertSourceCode.description',
@@ -20,7 +21,7 @@ const insertSourceCode = formatMessage => ({
     msg: 'msg.js',
     official: true,
     tags: ['other'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: '*'
 });
 
 module.exports = insertSourceCode;

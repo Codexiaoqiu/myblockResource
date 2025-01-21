@@ -6,8 +6,9 @@ const mfrc522 = formatMessage => ({
     extensionId: 'mfrc522',
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
-    author: 'ArthurZheng',
+        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'
+    ],
+    author: 'maxblock',
     iconURL: `asset/mfrc522.png`,
     description: formatMessage({
         id: 'mfrc522.description',
@@ -21,7 +22,7 @@ const mfrc522 = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['other'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: '*'
 });
 
 module.exports = mfrc522;

@@ -6,8 +6,9 @@ const passiveBuzzer = formatMessage => ({
     extensionId: 'passiveBuzzer',
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp8266'],
-    author: 'ArthurZheng',
+        'arduinoMega2560', 'arduinoEsp8266'
+    ],
+    author: 'maxblock',
     iconURL: `asset/passiveBuzzer.png`,
     description: formatMessage({
         id: 'passiveBuzzer.description',
@@ -21,7 +22,7 @@ const passiveBuzzer = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['actuator'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: '*'
 });
 
 module.exports = passiveBuzzer;

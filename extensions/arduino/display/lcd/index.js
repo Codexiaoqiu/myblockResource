@@ -6,8 +6,9 @@ const lcd = formatMessage => ({
     extensionId: 'lcd',
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'],
-    author: 'ArthurZheng',
+        'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'
+    ],
+    author: 'maxblock',
     iconURL: `asset/lcd.png`,
     description: formatMessage({
         id: 'lcd.description',
@@ -21,7 +22,7 @@ const lcd = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['display'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: '*'
 });
 
 module.exports = lcd;

@@ -6,8 +6,9 @@ const ps2 = formatMessage => ({
     extensionId: 'ps2',
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
-    author: 'ArthurZheng',
+        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'
+    ],
+    author: 'maxblock',
     iconURL: `asset/ps2.png`,
     description: formatMessage({
         id: 'ps2.description',
@@ -21,7 +22,7 @@ const ps2 = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['communication'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: '*'
 });
 
 module.exports = ps2;

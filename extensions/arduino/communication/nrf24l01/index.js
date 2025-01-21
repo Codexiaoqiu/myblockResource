@@ -3,8 +3,9 @@ const nrf24l01 = formatMessage => ({
     extensionId: 'nrf24l01',
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'],
-    author: 'ArthurZheng',
+        'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'
+    ],
+    author: 'maxblock',
     iconURL: `asset/nrf24l01.png`,
     description: formatMessage({
         id: 'nrf24l01.description',
@@ -18,7 +19,7 @@ const nrf24l01 = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['communication'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: '*'
 });
 
 module.exports = nrf24l01;

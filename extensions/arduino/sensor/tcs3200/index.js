@@ -3,8 +3,9 @@ const tcs3200 = formatMessage => ({
     extensionId: 'tcs3200',
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
-        'arduinoMega2560'],
-    author: 'ArthurZheng',
+        'arduinoMega2560'
+    ],
+    author: 'maxblock',
     iconURL: `asset/tcs3200.png`,
     description: formatMessage({
         id: 'tcs3200.description',
@@ -18,7 +19,7 @@ const tcs3200 = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['sensor'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: '*'
 });
 
 module.exports = tcs3200;

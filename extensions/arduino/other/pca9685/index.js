@@ -6,8 +6,9 @@ const pca9685 = formatMessage => ({
     extensionId: 'pca9685',
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
-    author: 'ArthurZheng',
+        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'
+    ],
+    author: 'maxblock',
     iconURL: `asset/pca9685.png`,
     description: formatMessage({
         id: 'pca9685.description',
@@ -21,7 +22,7 @@ const pca9685 = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['other'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: '*'
 });
 
 module.exports = pca9685;

@@ -8,7 +8,7 @@ const servo = formatMessage => ({
     version: '1.0.0',
     type: 'microbit',
     supportDevice: ['microbit', 'microbitV2'],
-    author: 'ArthurZheng',
+    author: 'maxblock',
     iconURL: `asset/servo.png`,
     description: formatMessage({
         id: 'servo.description',
@@ -23,7 +23,7 @@ const servo = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['actuator'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: '*'
 });
 
 module.exports = servo;

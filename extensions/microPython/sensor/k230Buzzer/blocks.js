@@ -1,0 +1,100 @@
+/* eslint-disable func-style */
+/* eslint-disable max-len */
+/* eslint-disable require-jsdoc */
+function addBlocks(Blockly) {
+    Blockly.Blocks['microbit_k230Peripheral_k230InitBuzzer'] = {
+        init: function () {
+            this.jsonInit({
+                colour: "#c282b5",
+                colourSecondary: "#c27295",
+                colourTertiary: "#c252a5",
+                args0: [{
+                    type: "field_dropdown",
+                    name: "PWM",
+                    options: [
+                        [
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "2",
+                            "2"
+                        ],
+                        [
+                            "3",
+                            "3"
+                        ],
+                        [
+                            "4",
+                            "4"
+                        ]
+                    ]
+                }],
+                message0: "初始化蜂鸣器，通道%1",
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+
+    Blockly.Blocks['microbit_k230Peripheral_k230SetBuzzer'] = {
+        init: function () {
+            this.jsonInit({
+                colour: "#c282b5",
+                colourSecondary: "#c27295",
+                colourTertiary: "#c252a5",
+                args0: [{
+                        type: "field_dropdown",
+                        name: "Type",
+                        options: [
+                            [
+                                "开启",
+                                "1"
+                            ],
+                            [
+                                "关闭",
+                                "0"
+                            ]
+                        ]
+                    },
+                    {
+                        type: "field_dropdown",
+                        name: "PWM",
+                        options: [
+                            [
+                                "0",
+                                "0"
+                            ],
+                            [
+                                "1",
+                                "1"
+                            ],
+                            [
+                                "2",
+                                "2"
+                            ],
+                            [
+                                "3",
+                                "3"
+                            ],
+                            [
+                                "4",
+                                "4"
+                            ]
+                        ]
+                    }
+                ],
+                message0: "%1 通道 %2 蜂鸣器",
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+    return Blockly;
+}
+
+exports = addBlocks;

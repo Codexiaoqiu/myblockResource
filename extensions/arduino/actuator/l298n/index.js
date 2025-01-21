@@ -3,8 +3,9 @@ const l298n = formatMessage => ({
     extensionId: 'l298n',
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp8266'],
-    author: 'Liang',
+        'arduinoMega2560', 'arduinoEsp8266'
+    ],
+    author: 'maxblock',
     iconURL: `asset/l298n.png`,
     description: formatMessage({
         id: 'l298n.description',
@@ -18,7 +19,7 @@ const l298n = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['actuator'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: '*'
 });
 
 module.exports = l298n;

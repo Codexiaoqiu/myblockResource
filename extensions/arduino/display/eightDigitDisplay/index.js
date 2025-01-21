@@ -6,8 +6,9 @@ const eightDigitDisplay = formatMessage => ({
     extensionId: 'eightDigitDisplay',
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'],
-    author: 'ArthurZheng',
+        'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'
+    ],
+    author: 'maxblock',
     iconURL: `asset/eightDigitDisplay.png`,
     description: formatMessage({
         id: 'eightDigitDisplay.description',
@@ -21,7 +22,7 @@ const eightDigitDisplay = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['display'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: '*'
 });
 
 module.exports = eightDigitDisplay;

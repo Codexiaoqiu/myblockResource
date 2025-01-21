@@ -3,8 +3,9 @@ const oled = formatMessage => ({
     extensionId: 'oled',
     version: '0.0.1',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
-    author: 'ArthurZheng',
+        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'
+    ],
+    author: 'maxblock',
     iconURL: `asset/oled.png`,
     description: formatMessage({
         id: 'oled.description',
@@ -18,7 +19,7 @@ const oled = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['display'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: '*'
 });
 
 module.exports = oled;

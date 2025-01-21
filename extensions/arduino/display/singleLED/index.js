@@ -3,7 +3,7 @@ const singleLED = formatMessage => ({
     extensionId: 'singleLED',
     version: '0.0.1',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo', 'arduinoMega2560'],
-    author: 'ArthurZheng',
+    author: 'maxblock',
     iconURL: `asset/dht.png`,
     description: formatMessage({
         id: 'singleLED.description',
@@ -17,8 +17,7 @@ const singleLED = formatMessage => ({
     msg: 'msg.js',
     official: true,
     tags: ['display'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: '*'
 });
 
 module.exports = singleLED;
-

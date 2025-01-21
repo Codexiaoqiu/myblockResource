@@ -6,8 +6,9 @@ const sdCard = formatMessage => ({
     extensionId: 'sdCard',
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
-    author: 'ArthurZheng',
+        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'
+    ],
+    author: 'maxblock',
     iconURL: `asset/sdCard.png`,
     description: formatMessage({
         id: 'sdCard.description',
@@ -21,7 +22,7 @@ const sdCard = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['other'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: '*'
 });
 
 module.exports = sdCard;

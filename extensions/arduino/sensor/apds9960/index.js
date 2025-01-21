@@ -3,8 +3,9 @@ const apds9960 = formatMessage => ({
     extensionId: 'apds9960',
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
-    author: 'ArthurZheng',
+        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'
+    ],
+    author: 'maxblock',
     iconURL: `asset/apds9960.png`,
     description: formatMessage({
         id: 'apds9960.description',
@@ -18,7 +19,7 @@ const apds9960 = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['sensor'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: '*'
 });
 
 module.exports = apds9960;

@@ -6,7 +6,7 @@ const ultrasonic = formatMessage => ({
     extensionId: 'espUltrasonic',
     version: '1.0.0',
     supportDevice: ['microPythonEsp32', 'microPythonEsp8266'],
-    author: 'ArthurZheng',
+    author: 'maxblock',
     iconURL: `asset/ultrasonic.png`,
     description: formatMessage({
         id: 'ultrasonic.description',
@@ -20,7 +20,7 @@ const ultrasonic = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['sensor'],
-    helpLink: 'https://wiki.openblock.cc'
+    helpLink: '*'
 });
 
 module.exports = ultrasonic;
