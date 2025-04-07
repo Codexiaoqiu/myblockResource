@@ -22,6 +22,8 @@ class Motor:
         # 关闭PWM
         self.pwma.deinit()
         self.pwmb.deinit()
+        self.pwma.enable(False)
+        self.pwmb.enable(False)
 `
         return code;
     };
@@ -41,7 +43,9 @@ class Motor:
         var arg1 = block.getFieldValue('PWM2') || '1';
         arg1 = parseInt(arg1)
         var arg2 = Blockly.Python.valueToCode(block, 'SPEED', Blockly.Python.ORDER_ATOMIC) || '10';
+        arg2 = arg2.replace(/^\(([-+]?\d+)\)$/, '$1');
         arg2 = parseInt(arg2)
+        console.log(arg2)
         var code = `motor${arg0}${arg1}.write(${arg2 / 100})\n`
         return code;
     };

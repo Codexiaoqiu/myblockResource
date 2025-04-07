@@ -10,7 +10,7 @@ function addGenerator(Blockly) {
         arg1 = parseInt(arg1)
         var code =
             `
-def getDistance(trigger${arg0}, echo${arg1}):
+def getDistance(trigger, echo):
     # 产生10us的方波
     trigger.low()
     utime.sleep_us(2)

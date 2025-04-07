@@ -48,6 +48,7 @@ class Motor:
         var arg0 = block.getFieldValue('PWM1') || '2';
         arg0 = parseInt(arg0)
         var arg1 = Blockly.Python.valueToCode(block, 'SPEED', Blockly.Python.ORDER_ATOMIC) || '10';
+        arg1 = arg1.replace(/^\(([-+]?\d+)\)$/, '$1');
         arg1 = parseInt(arg1)
         var code = `motor${arg0}.write(${arg1})\n`
         return code;

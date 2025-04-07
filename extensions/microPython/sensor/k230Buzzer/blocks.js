@@ -52,47 +52,88 @@ function addBlocks(Blockly) {
                         name: "Type",
                         options: [
                             [
-                                "开启",
-                                "1"
+                                "C4",
+                                "C4"
                             ],
                             [
-                                "关闭",
-                                "0"
-                            ]
+                                "D4",
+                                "D4"
+                            ],
+                            [
+                                "E4",
+                                "E4"
+                            ],
+                            [
+                                "F4",
+                                "F4"
+                            ],
+                            [
+                                "G4",
+                                "G4"
+                            ],
+                            [
+                                "A4",
+                                "A4"
+                            ],
+                            [
+                                "B4",
+                                "B4"
+                            ],
+                            [
+                                "C5",
+                                "C5"
+                            ],
                         ]
                     },
                     {
-                        type: "field_dropdown",
-                        name: "PWM",
-                        options: [
-                            [
-                                "0",
-                                "0"
-                            ],
-                            [
-                                "1",
-                                "1"
-                            ],
-                            [
-                                "2",
-                                "2"
-                            ],
-                            [
-                                "3",
-                                "3"
-                            ],
-                            [
-                                "4",
-                                "4"
-                            ]
-                        ]
+                        type: "input_value",
+                        name: "duration",
                     }
                 ],
-                message0: "%1 通道 %2 蜂鸣器",
+                message0: "播放音调%1 持续%2",
                 extensions: ['shape_statement']
             });
         }
     };
+    Blockly.Blocks['microbit_k230Peripheral_k230EndBuzzer'] = {
+        init: function () {
+            this.jsonInit({
+                colour: "#c282b5",
+                colourSecondary: "#c27295",
+                colourTertiary: "#c252a5",
+                args0: [{
+                    type: "field_dropdown",
+                    name: "PWM",
+                    options: [
+                        [
+                            "0",
+                            "0"
+                        ],
+                        [
+                            "1",
+                            "1"
+                        ],
+                        [
+                            "2",
+                            "2"
+                        ],
+                        [
+                            "3",
+                            "3"
+                        ],
+                        [
+                            "4",
+                            "4"
+                        ]
+                    ]
+                }],
+                message0: "释放PWM %1 资源",
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+
 
     return Blockly;
 }

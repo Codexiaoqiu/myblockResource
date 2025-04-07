@@ -13,7 +13,7 @@ function addGenerator(Blockly) {
     Blockly.Python['microbit_k230Peripheral_k230ReadVibrationMoto'] = function (block) {
         var arg0 = block.getFieldValue('PINS') || '2';
         arg0 = parseInt(arg0)
-        var arg1 = block.getFieldValue('TYPE') || '1';
+        var arg1 = block.getFieldValue('LED') || '1';
         arg1 = parseInt(arg1)
 
         var code = `vibrationMoto${arg0}.value(${arg1})\n`

@@ -1,7 +1,7 @@
 const k230Buzzer = formatMessage => ({
     name: formatMessage({
         id: 'micropythonK230.k230Buzzer',
-        default: '蜂鸣器'
+        default: '无源蜂鸣器'
     }),
     extensionId: 'k230Buzzer',
     version: '1.0.0',
@@ -10,8 +10,8 @@ const k230Buzzer = formatMessage => ({
     iconURL: `asset/buzzer.jpg`,
     description: formatMessage({
         id: 'micropythonK230.k230Buzzer',
-        default: '蜂鸣器',
-        description: '蜂鸣器'
+        default: '无源蜂鸣器',
+        description: '无源蜂鸣器'
     }),
     featured: true,
     blocks: 'blocks.js',
