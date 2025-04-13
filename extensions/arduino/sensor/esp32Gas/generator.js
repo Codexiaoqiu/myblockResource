@@ -7,7 +7,7 @@ function addGenerator (Blockly) {
             '#include "gas.hpp"';
         let arg0 = block.getFieldValue('PINS') || '33';
         arg0 = parseInt(arg0, 10);
-        Blockly.Arduino.definitions_.arduino_smarthome_initGAS =
+        Blockly.Arduino.definitions_[`arduino_smarthome_initGAS_${arg0}`] =
         `Gas gas_${arg0}(${arg0});`;
         const code = ``;
         return code;
@@ -20,9 +20,9 @@ function addGenerator (Blockly) {
         arg1 = parseInt(arg1, 10);
         let code;
         if (arg1 === 0) {
-            code = `gas${arg0}.getGasDigitalRead()`;
+            code = `gas_${arg0}.getGasDigitalRead()`;
         } else {
-            code = `gas${arg0}.getGasAnalogRead()`;
+            code = `gas_${arg0}.getGasAnalogRead()`;
         }
         return [code, Blockly.Arduino.ORDER_ATOMIC];
     };

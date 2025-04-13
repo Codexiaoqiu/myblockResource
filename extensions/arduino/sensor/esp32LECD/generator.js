@@ -8,7 +8,7 @@ function addGenerator (Blockly) {
         let arg0 = block.getFieldValue('LECDPIN') || '14';
 
         arg0 = parseInt(arg0, 10);
-        Blockly.Arduino.definitions_.arduino_smarthome_initLECD =
+        Blockly.Arduino.definitions_[`arduino_smarthome_initLECD_${arg0}`] =
               `Strip_module strip_${arg0}(${arg0});`;
         const code = '';
         return code;

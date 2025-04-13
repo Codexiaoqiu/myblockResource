@@ -7,7 +7,7 @@ function addGenerator (Blockly) {
             '#include "body.hpp"';
         let arg0 = block.getFieldValue('PINS') || '39';
         arg0 = parseInt(arg0, 10);
-        Blockly.Arduino.definitions_.arduino_smarthome_setBodyPin =
+        Blockly.Arduino.definitions_[`arduino_smarthome_setBodyPin_${arg0}`] =
         `Body body_${arg0}(${arg0});`;
         const code = ``;
         return code;

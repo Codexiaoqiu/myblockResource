@@ -7,7 +7,7 @@ function addGenerator (Blockly) {
             '#include "infrared.hpp"';
         let arg0 = block.getFieldValue('PINS') || '17';
         arg0 = parseInt(arg0, 10);
-        Blockly.Arduino.definitions_.arduino_smarthome_initRead =
+        Blockly.Arduino.definitions_[`arduino_smarthome_initRead_${arg0}`] =
         `Infrared infrared_${arg0}(${arg0});`;
         const code = ``;
         return code;

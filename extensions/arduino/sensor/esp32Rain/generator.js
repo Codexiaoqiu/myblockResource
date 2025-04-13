@@ -7,7 +7,7 @@ function addGenerator (Blockly) {
             '#include "raindrop.hpp"';
         let arg0 = block.getFieldValue('PINS') || '4';
         arg0 = parseInt(arg0, 10);
-        Blockly.Arduino.definitions_.arduino_smarthome_initRain =
+        Blockly.Arduino.definitions_[`arduino_smarthome_initRain_${arg0}`] =
         `Raindrop raindrop_${arg0}(${arg0});`;
         const code = ``;
         return code;

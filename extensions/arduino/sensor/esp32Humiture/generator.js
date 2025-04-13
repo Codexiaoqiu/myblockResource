@@ -7,7 +7,7 @@ function addGenerator (Blockly) {
             '#include "humiture.hpp"';
         let arg0 = block.getFieldValue('PINS') || '13';
         arg0 = parseInt(arg0, 10);
-        Blockly.Arduino.definitions_.arduino_smarthome_initHumiture =
+        Blockly.Arduino.definitions_[`arduino_smarthome_initHumiture_${arg0}`] =
         `Humiture humiture_${arg0}(${arg0});`;
         const code = ``;
         return code;

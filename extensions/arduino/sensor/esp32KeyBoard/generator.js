@@ -7,7 +7,7 @@ function addGenerator (Blockly) {
             '#include "keyboard.hpp"';
         let arg0 = block.getFieldValue('PINS') || '15';
         arg0 = parseInt(arg0, 10);
-        Blockly.Arduino.definitions_.arduino_smarthome_initKeyBoard =
+        Blockly.Arduino.definitions_[`arduino_smarthome_initKeyBoard_${arg0}`] =
         `Keyboard keyboard_${arg0}(${arg0});`;
         const code = ``;
         return code;

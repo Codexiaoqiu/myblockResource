@@ -10,7 +10,7 @@ function addGenerator (Blockly) {
 
         arg0 = parseInt(arg0, 10);
         arg1 = parseInt(arg1, 10);
-        Blockly.Arduino.definitions_.arduino_smarthome_setMotoPin =
+        Blockly.Arduino.definitions_[`arduino_smarthome_setMotoPin_${arg0}`] =
               `Moto moto_${arg0}_${arg1}(${arg0}, ${arg1});`;
         const code = '';
         return code;

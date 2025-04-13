@@ -7,7 +7,7 @@ function addGenerator (Blockly) {
             '#include "luminance.hpp"';
         let arg0 = block.getFieldValue('PINS') || '34';
         arg0 = parseInt(arg0, 10);
-        Blockly.Arduino.definitions_.arduino_smarthome_initLuminance =
+        Blockly.Arduino.definitions_[`arduino_smarthome_initLuminance_${arg0}`] =
         `Luminance luminance_${arg0}(${arg0});`;
         const code = ``;
         return code;

@@ -7,7 +7,7 @@ function addGenerator (Blockly) {
             '#include "buzzer.hpp"';
         let arg0 = block.getFieldValue('PINS') || '2';
         arg0 = parseInt(arg0, 10);
-        Blockly.Arduino.definitions_.arduino_smarthome_initBuzzer =
+        Blockly.Arduino.definitions_[`arduino_smarthome_initBuzzer_${arg0}`] =
         `Buzzer buzzer_${arg0}(${arg0});`;
         const code = ``;
         return code;

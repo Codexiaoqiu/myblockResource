@@ -7,7 +7,7 @@ function addGenerator (Blockly) {
             '#include "touch.hpp"';
         let arg0 = block.getFieldValue('PINS') || '35';
         arg0 = parseInt(arg0, 10);
-        Blockly.Arduino.definitions_.arduino_smarthome_initTouch =
+        Blockly.Arduino.definitions_[`arduino_smarthome_initTouch_${arg0}`] =
         `Touch touch_${arg0}(${arg0});`;
         const code = ``;
         return code;

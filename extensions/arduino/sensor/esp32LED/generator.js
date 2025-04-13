@@ -8,7 +8,7 @@ function addGenerator (Blockly) {
         let arg0 = block.getFieldValue('PINS') || '27';
 
         arg0 = parseInt(arg0, 10);
-        Blockly.Arduino.definitions_.arduino_smarthome_initlight =
+        Blockly.Arduino.definitions_[`arduino_smarthome_initlight_${arg0}`] =
               `LED led_${arg0}(${arg0});`;
         const code = '';
         return code;
