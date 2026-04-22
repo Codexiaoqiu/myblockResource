@@ -1,0 +1,10 @@
+{
+    "SERVO_CATEGORY": "Servo",
+    "SERVO_INIT": "initialize servo",
+    "SERVO_READ": "servo %1 angle",
+    "SERVO_WRITE": "servo %1 set angle to %2 degrees",
+    "SERVO_PORT_S1": "S1",
+    "SERVO_PORT_S2": "S2",
+    "SERVO_PORT_S3": "S3",
+    "SERVO_PORT_S4": "S4"
+}

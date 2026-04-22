@@ -13,6 +13,7 @@ function addToolbox() {
         </value>
     </block>
     <block type="microbit_k230Peripheral_k230EndBuzzer"><field name="PWM">0</field></block>
+    <block type="microbit_k230Peripheral_k230PlaySong"><field name="SONG">little_star</field></block>
 
 </category>`;
 }

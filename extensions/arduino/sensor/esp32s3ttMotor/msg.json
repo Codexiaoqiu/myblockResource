@@ -1,0 +1,12 @@
+{
+    "TTMOTOR_CATEGORY": "TT Motor",
+    "TTMOTOR_INIT": "init TT motor",
+    "TTMOTOR_MOVE": "motor %1 speed %2",
+    "TTMOTOR_STOP": "stop motors",
+    "TTMOTOR_FORWARD": "forward",
+    "TTMOTOR_BACKWARD": "backward",
+    "TTMOTOR_LEFT": "move left",
+    "TTMOTOR_RIGHT": "move right",
+    "TTMOTOR_TURN_LEFT": "turn left",
+    "TTMOTOR_TURN_RIGHT": "turn right"
+}

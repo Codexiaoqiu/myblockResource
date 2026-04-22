@@ -1,0 +1,16 @@
+{
+    "JOY_CATEGORY": "Joystick",
+    "JOY_INIT": "init joystick",
+    "JOY_UPDATE": "update joystick",
+    "JOY_BUTTON": "joystick button %1 pressed",
+    "JOY_ANALOG": "joystick %1 value",
+    "JOY_BTN_START": "START",
+    "JOY_BTN_DPAD_UP": "DPAD_UP",
+    "JOY_BTN_DPAD_DOWN": "DPAD_DOWN",
+    "JOY_BTN_L2": "L2",
+    "JOY_BTN_R2": "R2",
+    "JOY_ANALOG_LY": "左摇杆Y轴",
+    "JOY_ANALOG_LX": "左摇杆X轴",
+    "JOY_ANALOG_RY": "右摇杆Y轴",
+    "JOY_ANALOG_RX": "右摇杆X轴"
+}

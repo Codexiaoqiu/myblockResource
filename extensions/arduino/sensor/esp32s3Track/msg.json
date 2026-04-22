@@ -1,0 +1,10 @@
+{
+    "TRACK_CATEGORY": "Track Sensor",
+    "TRACK_INIT": "init track sensor",
+    "TRACK_READ": "read track sensor %1",
+    "TRACK_LEFT_OUTER": "left outer",
+    "TRACK_LEFT_INNER": "left inner",
+    "TRACK_RIGHT_INNER": "right inner",
+    "TRACK_RIGHT_OUTER": "right outer",
+    "TRACK_UPDATE": "update track sensor"
+}
